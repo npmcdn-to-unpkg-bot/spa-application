@@ -31,7 +31,8 @@ a{
 #panelHat{
   height:150px;
   width:100%;
-  background: #FFF url('https://appcyla.files.wordpress.com/2015/02/m1.jpg') no-repeat top;
+  background-image: url('https://appcyla.files.wordpress.com/2015/02/m1.jpg');
+  background-size:cover;
 }
 .fa{
   margin:.18em;

@@ -7,7 +7,7 @@ function apiRequest(address){
     url: "http://mikahouse.webhop.me/api?q=" + address ,
     dataType: 'jsonp',
     success: function(data){
-      $("#returned-data").html(data);
+      return "collection:" + data;
     }
   });
 }

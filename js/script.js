@@ -1,13 +1,15 @@
 $(document).ready(function(){
-  changeView('Welcome');
+   changeView('Welcome');
 });
 
 function apiRequest(address){
   $.ajax({
     url: "http://mikahouse.webhop.me/api?q=" + address ,
     dataType: 'jsonp',
-    success: function(data){
-      return "collection:" + data;
+    success: function(response){
+      $.each(this, function(index,data){
+        $('#returned-data').append(data.name);
+      })
     }
   });
 }
@@ -64,4 +66,20 @@ function changeView(elementId){
     default:
       readView('views/home.html', elementId);
   }
+}
+
+function masonize(){
+    $('.card').addClass('grid-item');
+    var elem = document.querySelector('.grid');
+    var msnry = new Masonry( elem, {
+      // options
+      itemSelector: '.grid-item',
+      columnWidth: 200
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var msnry = new Masonry( '.grid', {
+      // options
+    });
 }

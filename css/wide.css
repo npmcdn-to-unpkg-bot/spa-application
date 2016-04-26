@@ -1,6 +1,7 @@
 body{
   margin:0;
   font-family: 'Open Sans', sans-serif;
+  background-color:#EEE;
 }
 h1{
   font-size: 3em;
@@ -56,6 +57,13 @@ a{
   transition:.5s;
 }
 .card{
-  width:100%;
-  box-shadow:0 0 10px #DDD;
+  width:30%;
+  box-shadow:0 0 10px #CCC;
+  margin:20px;
+  border:1px solid #DDD;
+  background-color:#FFF;
+}
+.card img{
+  margin:1%;
+  width:98%;
 }

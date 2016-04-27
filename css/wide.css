@@ -62,6 +62,7 @@ a{
   margin:20px;
   border:1px solid #DDD;
   background-color:#FFF;
+  position:relative;
 }
 .card img{
   margin:1%;

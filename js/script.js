@@ -1,6 +1,18 @@
-$(document).ready(function(){
+$(window).load(function(){
    changeView('Welcome');
+   masonize();
 });
+
+$(document).on('scroll', function(){
+  var docTop = $(document).scrollTop();
+  if(docTop > 30){
+    $('#navBar').css('top','-5em');
+  }else{
+    $('#navBar').css('top','0');
+  }
+  var scrolled = $(window).scrollTop();
+  $('#hero').css('top', -(scrolled * 0.2) + 'px');
+})
 
 function apiRequest(address){
   $.ajax({
@@ -40,7 +52,7 @@ function readView(content, title){
 function changeView(elementId){
   switch (elementId) {
     case "Media Center":
-      readView('server.js', elementId);
+      readView('views/mediacenter.html', elementId);
       break;
     case "Music":
       readView('views/music.html', elementId);

@@ -1,0 +1,8 @@
+{
+  "main":"server.js",
+  "dependencies":{
+    "express":"*",
+    "morgan":"*",
+    "path":"*"
+  }
+}

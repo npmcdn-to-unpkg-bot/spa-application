@@ -43,6 +43,10 @@ $("#navBar, #shade, .shady").click(function(){
   navigation();
 });
 
+$('.switch').click(function(){
+  $(this).addClass('primary');
+})
+
 function readView(content, title, hero){
   var view = $('#view-container');
   $(view).load(content);

@@ -5,13 +5,19 @@ body{
 body::-webkit-scrollbar{
   display:none;
 }
+.primary{
+  background-color:#607D8B;
+}
+.accent{
+  background-color:#9E9E9E;
+}
 h1{
   color: white;
   margin:1vw;
+  font-size:7vw;
 }
 #navBar{
   width:100%;
-  background-color:#455A64;
   position: fixed;
   box-shadow: 0px 0px 10px #666;
   margin-bottom:1%;
@@ -68,6 +74,7 @@ a{
 }
 .card{
   width:96%;
+  z-index:10;
   margin-left:2%;
   margin-right:2%;
   box-shadow:0 0 10px #666;
@@ -85,9 +92,7 @@ a{
   border-bottom:1px solid #CCC;
 }
 .cardContent{
-  width:70%;
   margin:2%;
-  display:table;
 }
 .cardContent span{
   display:inline-block;
@@ -109,6 +114,9 @@ a{
   background-color:#FFF;
   top:-5px;
   float:right;
+  padding-left:5px;
+  padding-right:5px;
+  text-align: right;
 }
 .avatar{
   width:11vw;
@@ -133,4 +141,23 @@ a{
 .spacer{
   height:36vh;
   width:100vw;
+}
+.track{
+  width:45px;
+  height:15px;
+  border-radius:10px;
+  background-color:#DDD;
+  position:relative;
+  float:right;
+}
+.switch{
+  width:20px;
+  height:20px;
+  border-radius:20px;
+  background-color:#AAA;
+  vertical-align:middle;
+  box-shadow:2px 2px 5px #666;
+  position:absolute;
+  top:-25%;
+  transition:.5s;
 }

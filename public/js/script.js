@@ -44,9 +44,9 @@ $("#navBar, #shade, .shady").click(function(){
 });
 
 function materialButton(elem){
-  $(elem).addClass('primary');
+  $(elem).addClass('materialEffect');
   setTimeout(function(){
-    $(elem).removeClass('primary');
+    $(elem).removeClass('materialEffect');
   },1000)
 }
 

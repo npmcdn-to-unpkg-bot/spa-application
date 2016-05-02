@@ -6,7 +6,7 @@ body::-webkit-scrollbar{
   display:none;
 }
 .primary{
-  background-color:#607D8B !important;
+  background-color:#34495E !important;
   color:#FFF;
 }
 .accent{
@@ -167,9 +167,13 @@ a{
   border-radius:2px;
   padding:2px;
   margin:5px;
-  border:1px solid #DDD;
   transition:.5s;
   text-align:center;
+}
+.materialEffect{
+  background-color:#34495E !important;
+  color:#FFF;
+  box-shadow:1px 1px 5px #AAA;
 }
 .btnContainer{
   margin:5px;
@@ -178,4 +182,23 @@ a{
 }
 .flexQuarter{
   flex:1;
+}
+.artistCircle{
+  width:50vw;
+  height:50vw;
+  border-radius:50vw;
+  background-size:cover;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.albumCircle{
+  width:15vw;
+  height:15vw;
+  border-radius:15vw;
+  background-size:cover;
+}
+.stationImage{
+  background-size:cover;
 }

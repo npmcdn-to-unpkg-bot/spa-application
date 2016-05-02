@@ -2,9 +2,40 @@
 <div class="card">
   <div class="cardHeader">Living Room</div>
   <div class="cardContent">
-    <p><b>Light</b></p>
+    <label for="myBtn">Light</label>
     <div class="track">
-      <div class="switch"></div>
+      <div class="myBtn"></div>
     </div>
   </div>
 </div>
+
+<div class="card">
+  <div class="cardHeader">Back Room</div>
+  <div class="cardContent">
+    <label for="myBtn">Lamp</label>
+    <div class="track">
+      <div class="myBtn"></div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cardHeader">Garage</div>
+  <div class="cardContent">
+    <label for="myBtn">Door</label>
+    <div class="track">
+      <div class="myBtn"></div>
+    </div>
+    <div class="line"></div>
+    <label for="myBtn">Radio</label>
+    <div class="track">
+      <div class="myBtn"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('.myBtn').click(function(){
+    buttonFunc(this);
+  });
+</script>

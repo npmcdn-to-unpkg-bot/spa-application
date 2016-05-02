@@ -6,7 +6,8 @@ body::-webkit-scrollbar{
   display:none;
 }
 .primary{
-  background-color:#607D8B;
+  background-color:#607D8B !important;
+  color:#FFF;
 }
 .accent{
   background-color:#9E9E9E;
@@ -150,14 +151,31 @@ a{
   position:relative;
   float:right;
 }
-.switch{
+.myBtn{
   width:20px;
   height:20px;
   border-radius:20px;
   background-color:#AAA;
-  vertical-align:middle;
   box-shadow:2px 2px 5px #666;
   position:absolute;
   top:-25%;
   transition:.5s;
+}
+.myMaterial{
+  width:45px;
+  height:20px;
+  border-radius:2px;
+  padding:2px;
+  margin:5px;
+  border:1px solid #DDD;
+  transition:.5s;
+  text-align:center;
+}
+.btnContainer{
+  margin:5px;
+  height:40px;
+  display:flex;
+}
+.flexQuarter{
+  flex:1;
 }

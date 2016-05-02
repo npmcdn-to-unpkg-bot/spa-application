@@ -43,9 +43,23 @@ $("#navBar, #shade, .shady").click(function(){
   navigation();
 });
 
-$('.switch').click(function(){
-  $(this).addClass('primary');
-})
+function materialButton(elem){
+  $(elem).addClass('primary');
+  setTimeout(function(){
+    $(elem).removeClass('primary');
+  },1000)
+}
+
+function buttonFunc(elem){
+  var startingPos = $(elem).position().left;
+  if( startingPos == 0){
+    $(elem).css('left','25px');
+    $(elem).addClass('primary');
+  }else{
+    $(elem).css('left','0px');
+    $(elem).removeClass('primary');
+  }
+}
 
 function readView(content, title, hero){
   var view = $('#view-container');
@@ -57,28 +71,28 @@ function readView(content, title, hero){
 function changeView(elementId){
   switch (elementId) {
     case "Media Center":
-      readView('views/mediacenter.html', elementId, 'url(images/landscape.jpg)');
+      readView('views/mediacenter.html', elementId, 'url(images/media.jpg)');
       break;
     case "Music":
-      readView('views/music.html', elementId);
+      readView('views/music.html', elementId, 'url(images/music.jpg)');
       break;
     case "Minecraft":
-      readView('views/minecraft.html', elementId);
+      readView('views/minecraft.html', elementId, 'url(images/minecraft.jpg)');
       break;
     case "Controls":
-      readView('views/controls.html', elementId);
+      readView('views/controls.html', elementId, 'url(images/lighting.jpg)');
       break;
     case "Security":
-      readView('views/security.html', elementId);
+      readView('views/security.html', elementId, 'url(images/security.jpg)');
       break;
     case "Services":
-      readView('views/services.html', elementId);
+      readView('views/services.html', elementId, 'url(images/server.jpg)');
       break;
     case "Climate":
-      readView('views/climate.html', elementId);
+      readView('views/climate.html', elementId, 'url(images/landscape.jpg)');
       break;
     case "Notifications":
-      readView('views/notifications.html', elementId);
+      readView('views/notifications.html', elementId, 'url(images/notifications.jpg)');
       break;
     default:
       readView('views/home.html', elementId, "");

@@ -1,7 +1,7 @@
 var express = require("express");
 var app     = express();
 var morgan  = require("morgan");
-var port    = process.env.PORT || 8080;
+var port    = process.env.PORT || 3333;
 
 app.use(express.static('public'));
 app.use(morgan('combined'));

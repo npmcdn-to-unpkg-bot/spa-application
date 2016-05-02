@@ -180,6 +180,9 @@ a{
   height:40px;
   display:flex;
 }
+.flexy{
+  display:flex;
+}
 .flexQuarter{
   flex:1;
 }
@@ -194,11 +197,23 @@ a{
   margin-bottom:10px;
 }
 .albumCircle{
-  width:15vw;
-  height:15vw;
-  border-radius:15vw;
+  width:12vw;
+  height:12vw;
+  border-radius:10vw;
+  margin:5px;
   background-size:cover;
 }
 .stationImage{
   background-size:cover;
+}
+.stationInfo{
+  width:100%;
+  background-color:#FFF;
+}
+.imgCardHeader{
+  font-size:1em;
+  font-weight:bold;
+  margin:2%;
+  width:96%;
+  top:10px;
 }

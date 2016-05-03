@@ -1,3 +1,6 @@
+html{
+  font-size:7vw;
+}
 body{
   margin:0;
   font-family: 'Open Sans', sans-serif;
@@ -15,7 +18,7 @@ body::-webkit-scrollbar{
 h1{
   color: white;
   margin:1vw;
-  font-size:7vw;
+  font-size:1rem;
 }
 #navBar{
   width:100%;
@@ -86,7 +89,7 @@ a{
   width:100%;
 }
 .cardHeader{
-  font-size:1em;
+  font-size:.7rem;
   font-weight:bold;
   margin:2%;
   width:96%;
@@ -94,23 +97,24 @@ a{
 }
 .cardContent{
   margin:2%;
+  display:flex;
 }
 .cardContent span{
-  display:inline-block;
-  margin:0;
   display:table-cell;
+  margin-left:20px;
   vertical-align:middle;
 }
 .cardContent p{
   margin-left:2%;
-  font-size:.75em;
+  font-size:.5rem;
+  flex:3;
 }
 .cardTag{
   right:0;
   border:1px solid #CCC;
   border-top-left-radius:2px;
   border-bottom-left-radius:2px;
-  font-size:.5em;
+  font-size:.25rem;
   box-shadow: 0 0 5px #DDD;
   background-color:#FFF;
   top:-5px;
@@ -124,7 +128,6 @@ a{
   height:11vw;
   border-radius:64px;
   box-shadow:0 1px 5px #CCC;
-  display:table-cell;
 }
 .line{
   width:96%;

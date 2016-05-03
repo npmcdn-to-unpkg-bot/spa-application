@@ -19,7 +19,7 @@ function navigation(){
   if ( shadePosition.left == 0){
     $("#shade").css('left','-100vw');
     $("#shade").css('opacity','0');
-    $('#navPanel').css('left','-321px');
+    $('#navPanel').css('left','-60vw');
   } else {
     $("#shade").css('left','0px');
     $("#shade").css('opacity','.3');

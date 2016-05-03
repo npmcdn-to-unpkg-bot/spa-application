@@ -32,9 +32,9 @@ h1{
 #navPanel{
   height:100%;
   position:fixed;
-  width:300px;
+  width:60vw;
   background-color:#FEFEFE;
-  left:-321px;
+  left:-60vw;
   top:0;
   border-right:solid 1px #333;
   transition: .5s;
@@ -64,6 +64,7 @@ a{
   padding-left:20px;
   border-bottom:solid 1px #DDD;
   color:#666;
+  font-size:.5rem;
 }
 #shade{
   width:100%;

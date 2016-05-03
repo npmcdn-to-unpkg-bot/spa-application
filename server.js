@@ -1,4 +1,5 @@
-var express = require("express");
+var express = require("express"),
+              router = express.Router();
 var app     = express();
 var morgan  = require("morgan");
 var port    = process.env.PORT || 3333;

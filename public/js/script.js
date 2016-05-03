@@ -14,18 +14,6 @@ $(document).on('scroll', function(){
   $('#hero').css('top', -(scrolled * 0.2) + 'px');
 })
 
-function apiRequest(address){
-  $.ajax({
-    url: "http://mikahouse.webhop.me/api?q=" + address ,
-    dataType: 'jsonp',
-    success: function(response){
-      $.each(this, function(index,data){
-        $('#returned-data').append(data.name);
-      })
-    }
-  });
-}
-
 function navigation(){
   var shadePosition = $('#shade').position();
   if ( shadePosition.left == 0){
@@ -107,10 +95,18 @@ function masonize(){
       itemSelector: '.grid-item',
       columnWidth: 200
     });
-
-    // element argument can be a selector string
-    //   for an individual element
     var msnry = new Masonry( '.grid', {
-      // options
     });
+}
+
+function apiCall(call){
+  $.ajax({
+    url: "http://mikahouse.webhop.me/api?q=" + call,
+    dataType: 'jsonp',
+    jsonpCallback: call,
+    success: function(jsonpCallback){
+      console.log("success");
+      // console.log("success");
+    }
+  });
 }

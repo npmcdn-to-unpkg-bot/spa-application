@@ -9,7 +9,7 @@ body::-webkit-scrollbar{
   display:none;
 }
 .primary{
-  background-color:#34495E !important;
+  background-color:#1976D2 !important;
   color:#FFF;
 }
 .accent{
@@ -143,6 +143,7 @@ a{
   margin-right:2%;
   margin-bottom:auto;
   margin-top:auto;
+  padding-bottom:10px;
 }
 .spacer{
   height:36vh;
@@ -214,10 +215,9 @@ a{
 }
 .stationInfo{
   width:100%;
-  background-color:#FFF;
 }
 .imgCardHeader{
-  font-size:1em;
+  font-size:.7rem;
   font-weight:bold;
   margin:2%;
   width:96%;

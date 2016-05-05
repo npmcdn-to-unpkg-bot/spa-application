@@ -4,7 +4,7 @@ var mainRouter = express.Router();
 
 mainRouter.route('/')
   .get(function(req,res){
-    res.render('home');
+    res.render('index');
   })
 
 mainRouter.route('/books')

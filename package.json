@@ -3,6 +3,7 @@
   "dependencies":{
     "express":"*",
     "morgan":"*",
-    "path":"*"
+    "path":"*",
+    "jade":"*"
   }
 }

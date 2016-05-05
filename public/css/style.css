@@ -13,11 +13,11 @@ body::-webkit-scrollbar{
   color:#FFF;
 }
 .accent{
-  background-color:#9E9E9E;
+  background-color:#FF5722;
 }
 h1{
   color: white;
-  margin:1vw;
+  margin:2vw;
   font-size:1rem;
 }
 #navBar{
@@ -52,19 +52,22 @@ a{
 }
 #panelHat{
   height:150px;
-  width:100%;
-  background-image: url('https://appcyla.files.wordpress.com/2015/02/m1.jpg');
-  background-size:cover;
+  width:calc(100%-1rem);
+  color:#FFF;
+  padding:.5rem;
+  padding-left:1rem;
 }
 .fa{
   float:left;
-  margin:1.8%;
+  margin-right:2%;
+  margin-top:.45%;
 }
 .views{
-  padding-left:20px;
+  padding:.5rem;
+  padding-left:1rem;
   border-bottom:solid 1px #DDD;
   color:#666;
-  font-size:.5rem;
+  font-size:.7rem;
 }
 #shade{
   width:100%;
@@ -91,7 +94,6 @@ a{
 }
 .cardHeader{
   font-size:.7rem;
-  font-weight:bold;
   margin:2%;
   width:96%;
   border-bottom:1px solid #CCC;

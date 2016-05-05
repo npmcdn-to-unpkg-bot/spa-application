@@ -2,22 +2,49 @@ doctype html
 html
   head
     link(rel='stylesheet', media='all and (orientation:portrait)', href='css/style.css')
-    link(rel="stylesheet", media='all and (orientation:landscape)', href="css/wide.css")
+    link(rel='stylesheet', media='all and (orientation:landscape)', href='css/wide.css')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:300', rel=stylesheet, type='text/css')
-    link(rel=stylesheet, href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')
-    script(src="https://code.jquery.com/jquery-2.2.3.min.js")
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')
+    script(src='https://code.jquery.com/jquery-2.2.3.min.js')
   body
-   #navBar.primary
-    h1
-      i.fa.fa-bars.fa-inverse
-      #title|Welcome
-   #shade
-   #navPanel
-    a(class=shady, onClick="changeView('Welcome')")
-     div(id=panelHat)
-    a(class=shady, onClick="changeView('Media Center')")
-       div(class=views)
-        h2
-         i(class='fa fa-play-circle').
-         |Media Center
-   script(src='js/script.js')
+    #navBar.primary
+      h1
+        i.fa.fa-bars.fa-inverse
+        block title
+          #title|Default Title
+    #shade
+    #navPanel
+      a.shady(href='/')
+        #panelHat.accent
+          i.fa.fa-home.fa-inverse.
+          |MikaHouse
+      a.shady(href='/mediacenter')
+        .views
+          i.fa.fa-play-circle.
+          |Media Center
+      a.shady(href='/music')
+        .views
+          i.fa.fa-music.
+          |Music
+      a.shady(href='/controls')
+        .views
+          i.fa.fa-lightbulb-o.
+          |Controls
+      a.shady(href='/security')
+        .views
+          i.fa.fa-video-camera.
+          |Security
+      a.shady(href='/services')
+        .views
+          i.fa.fa-database.
+          |Services
+      a.shady(href='/climate')
+        .views
+          i.fa.fa-sun-o.
+          |Climate
+      a.shady(href='/notifications')
+        .views
+          i.fa.fa-exclamation-triangle.
+          |Notifications
+    block view-container
+    script(src='js/script.js')

@@ -4,12 +4,42 @@ var mainRouter = express.Router();
 
 mainRouter.route('/')
   .get(function(req,res){
-    res.render('index');
+    res.render('home');
   })
 
-mainRouter.route('/books')
+mainRouter.route('/mediacenter')
   .get(function(req,res){
-    res.send('Hello, Books!');
+    res.render('mediacenter');
+  })
+
+mainRouter.route('/music')
+  .get(function(req,res){
+    res.render('music');
+  })
+
+mainRouter.route('/controls')
+  .get(function(req,res){
+    res.render('controls');
+  })
+
+mainRouter.route('/security')
+  .get(function(req,res){
+    res.render('security');
+  })
+
+mainRouter.route('/services')
+  .get(function(req,res){
+    res.render('services');
+  })
+
+mainRouter.route('/climate')
+  .get(function(req,res){
+    res.render('climate');
+  })
+
+mainRouter.route('/notifications')
+  .get(function(req,res){
+    res.render('notifications');
   })
 
 module.exports = mainRouter;

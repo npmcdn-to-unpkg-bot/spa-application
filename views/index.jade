@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', media='all and (orientation:portrait)', href='css/style.css')
+    link(rel="stylesheet", media='all and (orientation:landscape)', href="css/wide.css")
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300', rel=stylesheet, type='text/css')
+    link(rel=stylesheet, href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')
+    script(src="https://code.jquery.com/jquery-2.2.3.min.js")
+  body
+   #navBar.primary
+    h1
+      i.fa.fa-bars.fa-inverse
+      #title|Welcome
+   #shade
+   #navPanel
+    a(class=shady, onClick="changeView('Welcome')")
+     div(id=panelHat)
+    a(class=shady, onClick="changeView('Media Center')")
+       div(class=views)
+        h2
+         i(class='fa fa-play-circle').
+         |Media Center
+   script(src='js/script.js')

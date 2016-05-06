@@ -1,10 +1,10 @@
-extends ./index.jade
+extends ./navigation.jade
 
 block title
   #title|Welcome
 
 block view-container
-  div(style='height:1.75rem;width:100%;').
+  div(style='height:2rem;width:100%;').
   .card
     .cardHeader|Who's Home
     .cardTag|Last Activity:
@@ -12,7 +12,7 @@ block view-container
       |10:30am
     .cardContent
       .avatar.
-      p|Ashleigh - 
+      p|Ashleigh -
         b|Away
     .line
     .cardTag|Last Activity:
@@ -20,5 +20,8 @@ block view-container
       |10:30am
     .cardContent
       .avatar.
-      p|Drew - 
+      p|Drew -
         b|Away
+  .card
+    .imgCardHeader
+      |something

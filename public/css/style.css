@@ -19,6 +19,7 @@ h1{
   color: white;
   margin:2vw;
   font-size:1rem;
+  font-weight:normal;
 }
 #navBar{
   width:100%;
@@ -34,7 +35,7 @@ h1{
   position:fixed;
   width:60vw;
   background-color:#FEFEFE;
-  left:-60vw;
+  left:-65vw;
   top:0;
   border-right:solid 1px #333;
   transition: .5s;
@@ -51,16 +52,24 @@ a{
   text-decoration:none;
 }
 #panelHat{
-  height:150px;
-  width:calc(100%-1rem);
+  width:100%;
   color:#FFF;
-  padding:.5rem;
-  padding-left:1rem;
+  height:20vh;
+}
+#panelHat h1{
+  margin-left:1rem;
+}
+#panelSpacer{
+  height:30%;
+  width:100%;
 }
 .fa{
   float:left;
   margin-right:2%;
-  margin-top:.45%;
+  margin-top:1.5%;
+}
+.views .fa{
+  margin-top:2%
 }
 .views{
   padding:.5rem;
@@ -85,7 +94,8 @@ a{
   z-index:10;
   margin-left:2%;
   margin-right:2%;
-  box-shadow:0 0 10px #666;
+  box-shadow:0 0 10px #AAA;
+  border-radius:1px;
   margin-bottom:2%;
   background-color:#FFF;
 }
@@ -99,7 +109,7 @@ a{
   border-bottom:1px solid #CCC;
 }
 .cardContent{
-  margin:2%;
+  padding:2%;
   display:flex;
 }
 .cardContent span{
@@ -135,7 +145,7 @@ a{
 .line{
   width:96%;
   border-bottom:1px solid #DDD;
-  margin:2%;
+  margin:0 2% 2% 2%;
 }
 .subText{
   text-align: right;
@@ -220,7 +230,6 @@ a{
 }
 .imgCardHeader{
   font-size:.7rem;
-  font-weight:bold;
   margin:2%;
   width:96%;
   top:10px;
